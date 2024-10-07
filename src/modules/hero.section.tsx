@@ -19,9 +19,14 @@ export const HeroSection = () => {
         достижениях и жизни команды. Всегда открыты для новых идей и
         сотрудничества <Icons.heart />
       </p>
-      <button className='bg-black text-white text-lg py-3 px-10 rounded-full'>
-        [Написать шампиньонам]
-      </button>
+      <a
+        href='https://t.me/m/Hl0aa0mKNDRi'
+        target='_blank'
+        rel='noopener noreferrer'
+        className='inline-block bg-black text-white text-lg py-3 px-10 rounded-full text-center'
+      >
+        [ Написать шампиньонам ]
+      </a>
     </div>
   );
 };

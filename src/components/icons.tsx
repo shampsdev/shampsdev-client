@@ -369,4 +369,25 @@ export const Icons = {
       className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
     />
   ),
+  dino: (props: ImageProps) => (
+    <img
+      src='/logo-icons/1.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
+  ),
+  time: (props: ImageProps) => (
+    <img
+      src='/logo-icons/2.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block object-contain', props.className)}
+    />
+  ),
+  coffee: (props: ImageProps) => (
+    <img
+      src='/icons/coffee.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block object-contain', props.className)}
+    />
+  ),
 };
