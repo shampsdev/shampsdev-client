@@ -9,11 +9,13 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <HeroSection />
-      <ProjectsSection />
-      <AcheivementsSection />
-      <TeamSection />
-      <FooterSection />
+      <div className='space-y-20'>
+        <HeroSection />
+        <ProjectsSection />
+        <AcheivementsSection />
+        <TeamSection />
+        <FooterSection />
+      </div>
     </>
   );
 };

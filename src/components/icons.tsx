@@ -72,6 +72,24 @@ export const Icons = {
       />
     </svg>
   ),
+  arrow: (props: IconProps) => (
+    <svg
+      width='17'
+      height='9'
+      viewBox='0 0 17 9'
+      fill='none'
+      strokeWidth={1.2}
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <path
+        d='M1 4.5H16M16 4.5L12.3793 1M16 4.5L12.3793 8'
+        stroke='black'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+    </svg>
+  ),
   cross: (props: IconProps) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
