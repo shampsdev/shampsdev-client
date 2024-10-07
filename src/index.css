@@ -54,3 +54,17 @@
   font-weight: medium;
   font-style: normal;
 }
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--ticker-width)));
+  }
+}
+
+.animate-ticker {
+  animation: ticker 20s linear infinite;
+  padding-left: 100%; /* Pushes the content initially out of view */
+}

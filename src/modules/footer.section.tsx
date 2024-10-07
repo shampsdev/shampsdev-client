@@ -1,38 +1,52 @@
+import { Footer } from '@/components/footer';
 import { Icons } from '@/components/icons';
-import { TextLogo } from '@/components/text-logo';
+import { NewsTicker } from '@/components/news-ticker';
+import { News } from '@/types/news.interface';
+
+const news: News[] = [
+  {
+    title: 'пупупупупу',
+    icon: <Icons.dino />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.time />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.coffee />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.dino />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.time />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.coffee />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.dino />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.time />,
+  },
+  {
+    title: 'пупупупупу',
+    icon: <Icons.coffee />,
+  },
+];
 
 export const FooterSection = () => {
   return (
     <div className='h-fit'>
-      <img className='md:max-w-[50%] mx-auto' src='/people/team.gif' alt='' />
-      <div className='flex flex-col justify-between bg-black text-white w-full rounded-t-3xl min-h-[30vh] px-16 pt-14 pb-10'>
-        <div className='flex justify-between h-full flex-col md:flex-row'>
-          <div>
-            <TextLogo.full className='w-48 h-fit pb-2' />
-            <p className='text-white/50 w-72 text-sm'>
-              Разработчики TravelTech, гении хакатонов и просто крутая команда
-              из ИТМО!
-            </p>
-          </div>
-          <div className='flex text-xl gap-10 h-fit flex-col md:flex-row'>
-            <div>
-              <p>Главная</p>
-              <p>Проекты</p>
-              <p>Награды</p>
-            </div>
-            <div>
-              <p>Команда</p>
-              <p>Блог</p>
-            </div>
-            <div className='flex gap-5'>
-              <Icons.instagram className='cursor-pointer' />
-              <Icons.telegram className='cursor-pointer' />
-              <Icons.youtube className='cursor-pointer' />
-            </div>
-          </div>
-        </div>
-        <p>© 2024, Шампиньоны</p>
-      </div>
+      <NewsTicker news={news} />
+      <Footer />
     </div>
   );
 };
