@@ -2,9 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(222.2 47.4% 11.2%);
+
+    --muted: hsl(210 40% 96.1%);
+    --muted-foreground: hsla(0 0% 0% / 0.5);
+
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: hsl(214.3 31.8% 91.4%);
+    --input: hsl(14.3 31.8% 91.4%);
+
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222.2 47.4% 11.2%);
+
+    --primary: hsl(222.2 47.4% 11.2%);
+    --primary-foreground: hsl(210 40% 98%);
+
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-foreground: hsl(222.2 47.4% 11.2%);
+
+    --accent: hsl(210 40% 96.1%);
+    --accent-foreground: hsl(222.2 47.4% 11.2%);
+
+    --destructive: hsl(0 100% 50%);
+    --destructive-foreground: hsl(210 40% 98%);
+
+    --ring: hsl(215 20.2% 65.1%);
+
+    --radius: 0.5rem;
+  }
+
+  body {
+    font-family: 'Consolas', monospace;
+  }
+}
+
 @font-face {
   font-family: 'Consolas';
   src: url('/fonts/consolas.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-medium.ttf') format('truetype');
+  font-weight: medium;
   font-style: normal;
 }
