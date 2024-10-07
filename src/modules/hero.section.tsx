@@ -2,7 +2,7 @@ import { AnimatedLogo } from '@/components/animated-logo';
 
 export const HeroSection = () => {
   return (
-    <div className='h-svh pt-52 w-full flex justify-center items-center flex-col gap-y-8'>
+    <div className='h-svh w-full flex justify-center items-center flex-col gap-y-8'>
       <AnimatedLogo />
       <p className='text-xl text-center'>Участвуем в хакатонах, развиваем TravelTech</p>
       <p className='text-muted-foreground max-w-[70%] text-center'>
