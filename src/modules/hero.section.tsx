@@ -4,9 +4,9 @@ import { TextLogo } from '@/components/text-logo';
 
 export const HeroSection = () => {
   return (
-    <div className='h-svh w-full flex justify-center items-center flex-col gap-y-8'>
+    <div className='min-h-svh pt-32 w-full flex justify-center items-center flex-col gap-y-8'>
       <AnimatedLogo />
-      <TextLogo.full className='md:hidden w-[90%]' />
+      <TextLogo.full className='md:hidden w-[90%] h-fit' />
       <p className='text-xl text-center'>
         Участвуем в хакатонах, развиваем TravelTech
       </p>
