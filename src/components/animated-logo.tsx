@@ -2,7 +2,7 @@ import { TextLogo } from '@/components/text-logo';
 
 export const AnimatedLogo = () => {
   return (
-    <div className="text-[8rem] font-['Inter'] items-center flex gap-x-4">
+    <div className="hidden text-[8rem] font-['Inter'] items-center md:flex gap-x-4">
       {'</'}
       <div className='h-[8rem] flex items-end gap-x-2 pb-5'>
         <div className='relative group w-[4rem]'>
@@ -45,12 +45,12 @@ export const AnimatedLogo = () => {
             className='hidden mx-auto group-hover:block h-[5rem]'
           />
         </div>
-        <div className='relative group w-[5rem]'>
+        <div className='relative group w-[4rem]'>
           <TextLogo.s className='group-hover:hidden' />
           <img
             src='/logo-icons/6.png'
             alt='logo'
-            className='hidden mx-auto group-hover:block h-[6rem]'
+            className='hidden mx-auto group-hover:block h-[5rem]'
           />
         </div>
       </div>

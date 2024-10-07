@@ -5,7 +5,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='w-full h-fit fixed p-5'>
+    <div className='w-full h-fit fixed p-5 z-10'>
       <div className='bg-black text-white h-fit w-full rounded-[2.3rem] pl-8 pr-10 py-4'>
         <div className='flex justify-between items-center'>
           <Icons.logo className='w-[93px] h-[41px] md:w-[62px] md:h-[27px]' />

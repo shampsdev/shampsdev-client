@@ -1,11 +1,19 @@
 import { Header } from '@/components/header';
+import { AcheivementsSection } from '@/modules/acheivements.section';
+import { FooterSection } from '@/modules/footer.section';
 import { HeroSection } from '@/modules/hero.section';
+import { ProjectsSection } from '@/modules/projects.section';
+import { TeamSection } from '@/modules/team.section';
 
 export const HomePage = () => {
   return (
     <>
       <Header />
       <HeroSection />
+      <ProjectsSection />
+      <AcheivementsSection />
+      <TeamSection />
+      <FooterSection />
     </>
   );
 };

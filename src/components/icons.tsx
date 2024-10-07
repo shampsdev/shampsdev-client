@@ -1,6 +1,8 @@
 import { cn } from '@/lib/utils';
+import { twMerge } from 'tailwind-merge';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
+type ImageProps = React.HTMLAttributes<HTMLImageElement>;
 
 export const Icons = {
   instagram: (props: IconProps) => (
@@ -313,5 +315,40 @@ export const Icons = {
         fill='white'
       />
     </svg>
+  ),
+  computer: (props: ImageProps) => (
+    <img
+      src='/icons/computer.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
+  ),
+  trophey: (props: ImageProps) => (
+    <img
+      src='/icons/trophey.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
+  ),
+  heart: (props: ImageProps) => (
+    <img
+      src='/icons/heart.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
+  ),
+  spyglass: (props: ImageProps) => (
+    <img
+      src='/icons/spyglass.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
+  ),
+  plane: (props: ImageProps) => (
+    <img
+      src='/icons/plane.png'
+      alt='logo'
+      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+    />
   ),
 };
