@@ -52,25 +52,25 @@ const supporters: People[] = [
     name: 'Лиза Мордвина-Щодро',
     role: 'оператор-монтажер',
     contact: '',
-    image: '',
+    image: '/people/liza.png',
   },
   {
     name: 'Олег Селянта',
     role: 'frontend-разработчик',
     contact: '',
-    image: '',
+    image: '/people/oleg.png',
   },
   {
     name: 'Аня Цветкова',
     role: 'режиссер',
     contact: '',
-    image: '',
+    image: '/people/anya.png',
   },
   {
     name: 'Лиля Яфарова',
     role: 'UX/UI дизайнер',
     contact: '',
-    image: '',
+    image: '/people/lilya.png',
   },
 ];
 
@@ -78,7 +78,7 @@ export const TeamSection = () => {
   return (
     <div className='min-h-screen'>
       <p className='text-center text-xl py-5'>Команда</p>
-      <div className='grid md:grid-cols-3 w-[90%] mx-auto gap-5'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 w-[90%] mx-auto gap-5'>
         {team.map((person) => (
           <TeamCard person={person} />
         ))}
@@ -89,7 +89,7 @@ export const TeamSection = () => {
       <p className='text-center text-muted-foreground text-xl pb-5'>
         Целуем в носик за ваши пару строчек
       </p>
-      <div>
+      <div className='flex justify-center flex-wrap w-[90%] mx-auto gap-5'>
         {supporters.map((person) => (
           <SupporterCard person={person} />
         ))}
