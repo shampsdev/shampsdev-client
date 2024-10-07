@@ -1,3 +1,4 @@
+import { ProjectCard } from '@/components/project-card';
 import { Project } from '@/types/project.interface';
 
 const projects: Project[] = [
@@ -33,10 +34,16 @@ const projects: Project[] = [
 
 export const ProjectsSection = () => {
   return (
-    <>
-      {projects.map((x) => (
-        <>{x.title}</>
-      ))}
-    </>
+    <div className='min-h-screen'>
+      <p className='text-center text-xl pb-5'>А вот наши проекты</p>
+      <div className='w-[90%] mx-auto flex flex-col gap-y-10'>
+        {projects.map((project, index) => (
+          <ProjectCard
+            project={project}
+            float={index % 2 == 0 ? 'left' : 'right'}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
