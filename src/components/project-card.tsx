@@ -11,12 +11,14 @@ export const ProjectCard = ({ project, float }: ProjectCardProps) => {
   return (
     <div
       className={twMerge(
-        'flex gap-20',
-        float == 'left' ? '' : 'flex-row-reverse'
+        'flex gap-5 md:gap-20 flex-col md:flex-row',
+        float == 'left' ? '' : 'md:flex-row-reverse'
       )}
     >
-      <div className='aspect-video bg-muted rounded-xl border w-[60%]'></div>
-      <div className='w-[40%] flex justify-between flex-col'>
+      <div className='aspect-video bg-muted rounded-xl border md:w-[60%] overflow-hidden'>
+        {project.image && <img src={project.image} className='h-full w-full object-cover' alt=''/>}
+      </div>
+      <div className='md:w-[40%] flex justify-between flex-col'>
         <div>
           <p className='text-xl'>{project.title}</p>
           <p className='text-muted-foreground'>{project.description}</p>

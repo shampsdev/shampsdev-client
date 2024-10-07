@@ -14,14 +14,14 @@ const projects: Project[] = [
       'Watchtower',
       'Docker',
     ],
-    image: '',
+    image: '/projects/dishdash.png',
   },
   {
     title: 'SightQuest',
     description:
       'Выполняйте задания, бегайте по городу и догоняйте соперников, чтобы выиграть.',
     tags: ['Django (Python)', 'React Native', 'Nginx', 'Docker'],
-    image: '',
+    image: '/projects/sightquest.png',
   },
   {
     title: 'KolomnaGo',
