@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
@@ -8,6 +10,7 @@ export const Icons = {
       viewBox='0 0 21 21'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={cn('h-6 w-6', props.className)}
       {...props}
     >
       <path
@@ -23,6 +26,7 @@ export const Icons = {
       viewBox='0 0 20 22'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={cn('h-6 w-6', props.className)}
       {...props}
     >
       <path
@@ -40,6 +44,7 @@ export const Icons = {
       viewBox='0 0 23 18'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={cn('h-6 w-6', props.className)}
       {...props}
     >
       <path
@@ -55,7 +60,7 @@ export const Icons = {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-6 h-6'
+      className={cn('h-6 w-6', props.className)}
       {...props}
     >
       <path
@@ -72,7 +77,7 @@ export const Icons = {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-6 h-6'
+      className={cn('h-6 w-6', props.className)}
       {...props}
     >
       <path
@@ -84,11 +89,10 @@ export const Icons = {
   ),
   logo: (props: IconProps) => (
     <svg
-      width='62'
-      height='27'
       viewBox='0 0 62 27'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={cn('w-[93px] h-[41px]', props.className)}
       {...props}
     >
       <path
