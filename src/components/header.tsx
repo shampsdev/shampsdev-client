@@ -8,7 +8,7 @@ export const Header = () => {
     <div className='w-full h-fit fixed p-5 z-10'>
       <div className='border bg-white h-fit w-full rounded-[2.3rem] pl-8 pr-10 py-4'>
         <div className='flex justify-between items-center'>
-          <Icons.logo className='w-[93px] h-[41px] md:w-[62px] md:h-[27px]' />
+          <Icons.logo className='w-[62px] h-[27px]' />
           <div className='hidden md:flex gap-24'>
             <div className='text-lg font-consolas flex gap-10'>
               <p className='cursor-pointer'>[ Блог ]</p>
