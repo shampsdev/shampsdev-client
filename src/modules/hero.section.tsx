@@ -10,14 +10,14 @@ export const HeroSection = () => {
       <p className='text-xl text-center'>
         Участвуем в хакатонах, развиваем TravelTech
       </p>
-      <p className='text-muted-foreground text-lg max-w-[90%] md:max-w-[70%] text-center'>
+      <p className='text-muted-foreground md:text-lg max-w-[90%] md:max-w-[70%] text-center'>
         Мы команда Шампиньоны из Университета ИТМО. Регулярно участвуем в
-        хакатонах <Icons.computer /> и почти так же регулярно выигрываем{' '}
-        <Icons.trophey /> в них! Занимаемся полным циклом <Icons.spyglass />{' '}
-        разработки IT проектов в области TravelTech <Icons.plane /> — от идеи до
-        реализации и продвижения. Здесь мы рассказываем о наших проектах,
-        достижениях и жизни команды. Всегда открыты для новых идей и
-        сотрудничества <Icons.heart />
+        хакатонах <Icons.computer />{' '}
+        и почти так же регулярно выигрываем <Icons.trophey /> в них! Занимаемся
+        полным циклом <Icons.spyglass /> разработки IT проектов в области
+        TravelTech <Icons.plane /> — от идеи до реализации и продвижения. Здесь
+        мы рассказываем о наших проектах, достижениях и жизни команды. Всегда
+        открыты для новых идей и сотрудничества <Icons.heart />
       </p>
       <a
         href='https://t.me/m/Hl0aa0mKNDRi'
