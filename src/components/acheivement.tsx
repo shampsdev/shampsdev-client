@@ -8,8 +8,8 @@ interface AcheivementProps {
 export const AcheivementComponent = ({ acheivement }: AcheivementProps) => {
   return (
     <div className='py-4 flex items-center gap-5'>
-      <div className='h-9 w-9 flex border-[1px] justify-center items-center bg-secondary rounded-full p-2'>
-        <img src={acheivement.icon} alt='' />
+      <div className='flex-shrink-0 h-9 w-9 flex border-[1px] justify-center items-center bg-secondary rounded-full p-2'>
+        <img className='h-full w-full' src={acheivement.icon} alt='' />
       </div>
       <div className='md:w-[40%]'>
         <p>{acheivement.sponsor}</p>

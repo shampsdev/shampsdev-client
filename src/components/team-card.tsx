@@ -7,7 +7,7 @@ interface TeamCardProps {
 export const TeamCard = ({ person }: TeamCardProps) => {
   return (
     <div className='flex h-full w-full rounded-2xl border p-6 gap-5'>
-      <div className='h-32 w-32 bg-muted rounded-full overflow-hidden'>
+      <div className='flex-shrink-0 h-32 w-32 bg-muted rounded-full overflow-hidden'>
         <img className='h-full w-full object-cover' src={person.image} alt=''/>
       </div>
       <div className='flex flex-col justify-around w-fit'>
