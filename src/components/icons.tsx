@@ -338,56 +338,80 @@ export const Icons = {
     <img
       src='/icons/computer.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   trophey: (props: ImageProps) => (
     <img
       src='/icons/trophey.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   heart: (props: ImageProps) => (
     <img
       src='/icons/heart.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   spyglass: (props: ImageProps) => (
     <img
       src='/icons/spyglass.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   plane: (props: ImageProps) => (
     <img
       src='/icons/plane.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   dino: (props: ImageProps) => (
     <img
       src='/logo-icons/1.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block', props.className)}
+      className={twMerge(
+        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        props.className
+      )}
     />
   ),
   time: (props: ImageProps) => (
     <img
       src='/logo-icons/2.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block object-contain', props.className)}
+      className={twMerge(
+        'h-[2rem] w-[2rem] inline-block object-contain',
+        props.className
+      )}
     />
   ),
   coffee: (props: ImageProps) => (
     <img
       src='/icons/coffee.png'
       alt='logo'
-      className={twMerge('h-[2rem] w-[2rem] inline-block object-contain', props.className)}
+      className={twMerge(
+        'h-[2rem] w-[2rem] inline-block object-contain',
+        props.className
+      )}
     />
   ),
 };
