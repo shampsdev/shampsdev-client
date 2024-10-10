@@ -103,12 +103,10 @@ export const TextLogo: React.FC<TextLogoProps> = ({
 
     full: (
       <svg
-        width='976'
-        height='202'
         viewBox='0 0 976 202'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        {...props}
+        className='w-full'
       >
         <path
           d='M958.218 115.85L882.921 152.365V135.015L938.486 109.726L937.919 110.69V108.252L938.486 109.273L882.921 83.9281V66.6346L958.218 103.149V115.85Z'
@@ -158,5 +156,5 @@ export const TextLogo: React.FC<TextLogoProps> = ({
     ),
   };
 
-  return <span className={cn(className)}>{charSvgMap[char]}</span>;
+  return <div className={cn(className)}>{charSvgMap[char]}</div>;
 };

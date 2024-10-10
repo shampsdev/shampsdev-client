@@ -12,7 +12,7 @@ export const letters: LetterData[] = [
   { char: "m", width: "w-[8rem]", imgSrc: "/logo-icons/4.png" },
   {
     char: "p",
-    width: "w-[5rem]",
+    width: "w-[5.3rem]",
     imgSrc: "/logo-icons/5.png",
     extraClass: "translate-y-10",
   },
