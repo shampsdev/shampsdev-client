@@ -1,34 +1,34 @@
-import { ProjectCard } from '@/components/project-card';
-import { Project } from '@/types/project.interface';
+import { ProjectCard } from "@/components/project-card";
+import { Project } from "@/types/project.interface";
 
 const projects: Project[] = [
   {
-    title: 'DishDash',
+    title: "DishDash",
     description:
-      'Выбирайте интересные места для встреч с друзьями с помощью Telegram-бота DishDash. Свайпайте и открывайте новые локации с друзьями или самостоятельно.',
+      "Выбирайте интересные места для встреч с друзьями с помощью Telegram-бота DishDash. Свайпайте и открывайте новые локации с друзьями или самостоятельно.",
     tags: [
-      'Golang',
-      'React',
-      'Github Action',
-      'Traefik',
-      'Watchtower',
-      'Docker',
+      "Golang",
+      "React",
+      "Github Action",
+      "Traefik",
+      "Watchtower",
+      "Docker",
     ],
-    image: '/projects/dishdash.png',
+    image: "/projects/dishdash.png",
   },
   {
-    title: 'SightQuest',
+    title: "SightQuest",
     description:
-      'Выполняйте задания, бегайте по городу и догоняйте соперников, чтобы выиграть.',
-    tags: ['Django (Python)', 'React Native', 'Nginx', 'Docker'],
-    image: '/projects/sightquest.png',
+      "Выполняйте задания, бегайте по городу и догоняйте соперников, чтобы выиграть.",
+    tags: ["Django (Python)", "React Native", "Nginx", "Docker"],
+    image: "/projects/sightquest.png",
   },
   {
-    title: 'KolomnaGo',
+    title: "KolomnaGo",
     description:
-      'Помогает туристам и местным жителям быть в курсе всех культурных событий, а организаторам — легко управлять мероприятиями.',
-    tags: ['Django (Python)', 'Vue', 'Traefik', 'Docker'],
-    image: '',
+      "Помогает туристам и местным жителям быть в курсе всех культурных событий, а организаторам — легко управлять мероприятиями.",
+    tags: ["Django (Python)", "Vue", "Traefik", "Docker"],
+    image: "",
   },
 ];
 
@@ -39,8 +39,9 @@ export const ProjectsSection = () => {
       <div className='w-[90%] mx-auto flex flex-col gap-y-10'>
         {projects.map((project, index) => (
           <ProjectCard
+            key={project.title + index}
             project={project}
-            float={index % 2 == 0 ? 'left' : 'right'}
+            float={index % 2 == 0 ? "left" : "right"}
           />
         ))}
       </div>
