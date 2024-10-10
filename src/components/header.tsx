@@ -47,7 +47,6 @@ export const Header = () => {
               </p>
             </div>
             <div className='flex gap-5 justify-center pb-2'>
-              <Icons.instagram className='cursor-pointer h-8 w-8' />
               <Icons.telegram className='cursor-pointer h-8 w-8' />
               <Icons.youtube className='cursor-pointer h-8 w-8' />
             </div>
