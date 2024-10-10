@@ -3,49 +3,40 @@ import { Icons } from '@/components/icons';
 import { NewsTicker } from '@/components/news-ticker';
 import { News } from '@/types/news.interface';
 
-const news: News[] = [
+const telegram_stats: News[] = [
   {
-    title: 'пупупупупу',
     icon: <Icons.dino />,
+    title: '128 подписчиков в телеграм канале',
   },
   {
-    title: 'пупупупупу',
     icon: <Icons.time />,
+    title: 'Вика присоеденилась в телегам канал',
   },
   {
-    title: 'пупупупупу',
     icon: <Icons.coffee />,
-  },
+    title: 'Макар прокоментировал "жесть история кайфовая… такие вы милашики, я не могу."',
+  }
+];
+
+const stats: News[] = [
   {
-    title: 'пупупупупу',
     icon: <Icons.dino />,
+    title: '1203 коммита',
   },
   {
-    title: 'пупупупупу',
     icon: <Icons.time />,
+    title: '34 ночей без сна',
   },
   {
-    title: 'пупупупупу',
     icon: <Icons.coffee />,
-  },
-  {
-    title: 'пупупупупу',
-    icon: <Icons.dino />,
-  },
-  {
-    title: 'пупупупупу',
-    icon: <Icons.time />,
-  },
-  {
-    title: 'пупупупупу',
-    icon: <Icons.coffee />,
-  },
+    title: '603 выпитых кружек кофе',
+  }
 ];
 
 export const FooterSection = () => {
   return (
     <div className='h-fit'>
-      <NewsTicker news={news} />
+      <NewsTicker newsTop={stats} newsBottom={telegram_stats} />
       <Footer />
     </div>
   );
