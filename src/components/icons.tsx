@@ -1,5 +1,5 @@
-import { cn } from '@/lib/utils';
-import { twMerge } from 'tailwind-merge';
+import { cn } from "@/lib/utils";
+import { twMerge } from "tailwind-merge";
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 type ImageProps = React.HTMLAttributes<HTMLImageElement>;
@@ -12,7 +12,7 @@ export const Icons = {
       viewBox='0 0 21 21'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={cn('h-6 w-6', props.className)}
+      className={cn("h-6 w-6", props.className)}
       {...props}
     >
       <path
@@ -28,12 +28,12 @@ export const Icons = {
       viewBox='0 0 20 22'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={cn('h-6 w-6', props.className)}
+      className={cn("h-6 w-6", props.className)}
       {...props}
     >
       <path
-        fill-rule='evenodd'
-        clip-rule='evenodd'
+        fillRule='evenodd'
+        clipRule='evenodd'
         d='M0.314453 0.706055V2.29976H3.29469V0.706055H0.314453ZM3.29492 3.89338V2.29967H6.27516V3.89338H3.29492ZM6.27539 3.89335V5.48705H9.25562V3.89335H6.27539ZM9.25586 7.08109V5.48738H12.2361V7.08088H15.2146V8.67459H12.2344V7.08109H9.25586ZM15.2148 10.2683V8.67461H18.1951V10.2683H15.2148ZM18.1973 11.8624V10.2687H19.8228V11.8624H18.1973ZM0.314649 2.2998V6.01844H1.94023V2.2998H0.314649ZM1.94141 8.93982V6.01802H3.56699V8.93982H1.94141ZM15.2148 11.8622V13.4559H18.1951V11.8622H15.2148ZM12.2344 15.0494V13.4557H15.2146V15.0494H12.2344ZM9.25586 15.0495V16.6432H12.2361V15.0495H9.25586ZM6.27539 18.2369V16.6432H9.25562V18.2369H6.27539ZM3.29492 18.2367V19.8304H6.27516V18.2367H3.29492ZM0.314649 21.4243V19.8306H3.29488V21.4243H0.314649ZM0.314649 19.8305V16.1118H1.94023V19.8305H0.314649ZM1.94141 13.1898V16.1116H3.56699V13.1901H5.19218V8.94025H3.5666V13.1898H1.94141ZM5.19336 11.8618V10.2681H10.612V11.8618H5.19336Z'
         fill='currentColor'
       />
@@ -46,7 +46,7 @@ export const Icons = {
       viewBox='0 0 23 18'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={cn('h-6 w-6', props.className)}
+      className={cn("h-6 w-6", props.className)}
       {...props}
     >
       <path
@@ -62,7 +62,7 @@ export const Icons = {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={cn('h-6 w-6', props.className)}
+      className={cn("h-6 w-6", props.className)}
       {...props}
     >
       <path
@@ -85,8 +85,8 @@ export const Icons = {
       <path
         d='M1 4.5H16M16 4.5L12.3793 1M16 4.5L12.3793 8'
         stroke='black'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   ),
@@ -97,7 +97,7 @@ export const Icons = {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className={cn('h-6 w-6', props.className)}
+      className={cn("h-6 w-6", props.className)}
       {...props}
     >
       <path
@@ -112,7 +112,7 @@ export const Icons = {
       viewBox='0 0 62 27'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={cn('w-[93px] h-[41px]', props.className)}
+      className={cn("w-[93px] h-[41px]", props.className)}
       {...props}
     >
       <path
@@ -339,7 +339,7 @@ export const Icons = {
       src='/icons/computer.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -349,7 +349,7 @@ export const Icons = {
       src='/icons/trophey.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -359,7 +359,7 @@ export const Icons = {
       src='/icons/heart.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -369,7 +369,7 @@ export const Icons = {
       src='/icons/spyglass.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -379,7 +379,7 @@ export const Icons = {
       src='/icons/plane.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -389,7 +389,7 @@ export const Icons = {
       src='/logo-icons/1.png'
       alt='logo'
       className={twMerge(
-        'h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block',
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block",
         props.className
       )}
     />
@@ -399,7 +399,7 @@ export const Icons = {
       src='/logo-icons/2.png'
       alt='logo'
       className={twMerge(
-        'h-[2rem] w-[2rem] inline-block object-contain',
+        "h-[2rem] w-[2rem] inline-block object-contain",
         props.className
       )}
     />
@@ -409,7 +409,7 @@ export const Icons = {
       src='/icons/coffee.png'
       alt='logo'
       className={twMerge(
-        'h-[2rem] w-[2rem] inline-block object-contain',
+        "h-[2rem] w-[2rem] inline-block object-contain",
         props.className
       )}
     />
