@@ -4,7 +4,10 @@ import { TextLogo } from '@/components/text-logo';
 
 export const HeroSection = () => {
   return (
-    <div className='min-h-svh pt-32 w-full flex justify-center items-center flex-col gap-y-8'>
+    <div
+      id='hero'
+      className='min-h-svh w-full flex justify-center items-center flex-col gap-y-8'
+    >
       <AnimatedLogo />
       <TextLogo char='full' className='md:hidden w-[90%] h-fit' />
       <p className='text-xl text-center'>

@@ -15,19 +15,19 @@ export const ProjectCard = ({ project, float }: ProjectCardProps) => {
         float == "left" ? "" : "md:flex-row-reverse"
       )}
     >
-      <div className='aspect-video bg-muted rounded-xl border md:w-[60%] overflow-hidden'>
+      <div className='bg-muted aspect-[76/39] rounded-xl border md:w-[60%] overflow-hidden'>
         {project.image && (
           <img
             src={project.image}
-            className='h-full w-full object-cover'
+            className='w-full h-full object-fill'
             alt=''
           />
         )}
       </div>
       <div className='md:w-[40%] flex justify-between flex-col'>
         <div>
-          <p className='text-xl'>{project.title}</p>
-          <p className='text-muted-foreground'>{project.description}</p>
+          <p className='text-xl pb-2'>{project.title}</p>
+          <p className='text-lg text-muted-foreground pb-2'>{project.description}</p>
         </div>
         <div className='gap-1 flex flex-wrap'>
           {project.tags.map((title, index) => (

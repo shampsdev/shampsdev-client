@@ -14,8 +14,9 @@ const telegram_stats: News[] = [
   },
   {
     icon: <Icons.coffee />,
-    title: 'Макар прокоментировал "жесть история кайфовая… такие вы милашики, я не могу."',
-  }
+    title:
+      'Макар прокоментировал "жесть история кайфовая… такие вы милашики, я не могу."',
+  },
 ];
 
 const stats: News[] = [
@@ -30,12 +31,12 @@ const stats: News[] = [
   {
     icon: <Icons.coffee />,
     title: '603 выпитых кружек кофе',
-  }
+  },
 ];
 
 export const FooterSection = () => {
   return (
-    <div className='h-fit'>
+    <div className='pt-24'>
       <NewsTicker newsTop={stats} newsBottom={telegram_stats} />
       <Footer />
     </div>

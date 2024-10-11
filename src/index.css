@@ -7,13 +7,13 @@
     --background: hsl(0 0% 100%);
     --foreground: hsl(222.2 47.4% 11.2%);
 
-    --muted: #EEEEEE;
+    --muted: #eeeeee;
     --muted-foreground: hsla(0 0% 0% / 0.5);
 
     --popover: hsl(0 0% 100%);
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    --border: #DCDCDC;
+    --border: #dcdcdc;
     --input: hsl(14.3 31.8% 91.4%);
 
     --card: hsl(0 0% 100%);
@@ -22,7 +22,7 @@
     --primary: hsl(222.2 47.4% 11.2%);
     --primary-foreground: hsl(210 40% 98%);
 
-    --secondary: #F4F4F4;
+    --secondary: #f4f4f4;
     --secondary-foreground: hsl(222.2 47.4% 11.2%);
 
     --accent: hsl(210 40% 96.1%);
@@ -34,6 +34,7 @@
     --ring: hsl(215 20.2% 65.1%);
 
     --radius: 0.5rem;
+    scroll-behavior: smooth;
   }
 
   body {

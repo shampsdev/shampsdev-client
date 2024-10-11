@@ -19,23 +19,39 @@ export const Footer = () => {
           </div>
           <div className='flex text-xl md:gap-10 h-fit flex-col md:flex-row'>
             <div>
-              <p>Главная</p>
-              <p>Проекты</p>
-              <p>Награды</p>
+              <a href='#hero'>
+                <p>Главная</p>
+              </a>
+              <a href='#acheivements'>
+                <p>Награды</p>
+              </a>
             </div>
             <div>
-              <p>Команда</p>
-              <p>Блог</p>
+              <a href='#team'>
+                <p>Команда</p>
+              </a>
             </div>
             <div className='flex items-center md:items-start pt-10 md:pt-0'>
               <div className='flex h-fit items-center gap-5'>
-                <Icons.telegram className='cursor-pointer' />
-                <Icons.youtube className='cursor-pointer' />
+                <a
+                  href='https://t.me/shampsdev'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Icons.telegram />
+                </a>
+                <a
+                  href='https://www.youtube.com/@shampsdev'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Icons.youtube />
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <p>© 2024, Шампиньоны</p>
+        <p>© 2024, ШампсТех</p>
       </div>
     </>
   );
