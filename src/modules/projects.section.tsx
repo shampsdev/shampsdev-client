@@ -41,7 +41,7 @@ const projects: Project[] = [
 
 export const ProjectsSection = () => {
   return (
-    <div id='projects' className='pt-24'>
+    <div id='projects' className='pt-16'>
       <p className='text-center text-xl pb-16'>А вот наши проекты</p>
       <div className='w-[90%] mx-auto flex flex-col gap-y-10 md:gap-y-40'>
         {projects.map((project, index) => (
