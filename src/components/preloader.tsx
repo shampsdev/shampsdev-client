@@ -9,7 +9,30 @@ const Preloader: React.FC = () => {
   const { progress } = useLoadingStatus();
 
   const shouldFlip = (index: number) => {
-    return progress >= (index + 1) * 16.6
+    if (progress < 11) {
+      return [0].includes(index);
+    } else if (progress < 18) {
+      return [0, 1].includes(index);
+    } else if (progress < 30) {
+      return [0, 1, 2].includes(index);
+    } else if (progress < 31) {
+      return [1, 2].includes(index);
+    } else if (progress < 37) {
+      return [1, 2, 3].includes(index);
+    } else if (progress < 56) {
+      return [1, 2, 3, 5].includes(index);
+    } else if (progress < 61) {
+      return [1, 2, 5].includes(index);
+    } else if (progress < 74) {
+      return [0, 2, 5].includes(index);
+    } else if (progress < 83) {
+      return [0, 2].includes(index);
+    } else if (progress < 87) {
+      return [0, 2, 4].includes(index);
+    } else if (progress < 95) {
+      return [4].includes(index);
+    }
+    return false;
   };
 
   return (

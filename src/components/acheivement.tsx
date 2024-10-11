@@ -13,8 +13,12 @@ export const AcheivementComponent = ({ acheivement }: AcheivementProps) => {
       </div>
       <div className='md:w-[40%]'>
         <p>{acheivement.sponsor}</p>
-        <p className='text-muted-foreground hidden md:block'>{acheivement.year}</p>
-        <p className='text-muted-foreground md:hidden'>{acheivement.category}</p>
+        <p className='text-muted-foreground hidden md:block'>
+          {acheivement.year}
+        </p>
+        <p className='text-muted-foreground md:hidden'>
+          {acheivement.category}
+        </p>
       </div>
       <div className='hidden md:block'>
         <p>{acheivement.category}</p>
@@ -23,8 +27,12 @@ export const AcheivementComponent = ({ acheivement }: AcheivementProps) => {
         )}
       </div>
       <div className='ml-auto flex items-center text-muted-foreground gap-5'>
-        <p className='hidden md:block'>{acheivement.project.name}</p>
-        <Icons.arrow />
+        <div className='items-center flex justify-end md:justify-between gap-5 md:w-[200px]'>
+          <p className='hidden md:flex text-left'>
+            {acheivement.project.name}
+          </p>
+          <Icons.arrow />
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ interface NewsTickerProps {
 
 export const NewsTicker = ({ newsTop, newsBottom }: NewsTickerProps) => {
   return (
-    <div className='py-10'>
+    <div className='pb-10 -mt-8'>
       <Marquee
         direction='right'
         autoFill
