@@ -1,3 +1,5 @@
+'use client';
+
 import { HomePage } from '@/pages/home.page';
 import { useLoadingStatus } from '@/hooks/useLoadingStatus';
 import Preloader from '@/components/preloader';
