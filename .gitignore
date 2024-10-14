@@ -1,4 +1,9 @@
 # Logs
+
+# ...
+.next
+next-env.d.ts
+
 logs
 *.log
 npm-debug.log*
