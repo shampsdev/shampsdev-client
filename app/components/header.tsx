@@ -1,3 +1,5 @@
+'use client';
+
 import { Icons } from '@/components/icons';
 import { useState } from 'react';
 
