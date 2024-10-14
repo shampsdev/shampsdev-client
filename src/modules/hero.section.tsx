@@ -33,10 +33,6 @@ export const HeroSection = () => {
           [ Написать шампиньонам ]
         </a>
       </div>
-      {/* <Marquee className='pt-16' autoFill speed={20}>
-        <img className='h-8 pr-20' src='/logo-icons/vkusvill.png' />
-        <img className='h-16 pr-20' src='/logo-icons/fond.png' />
-      </Marquee> */}
     </div>
   );
 };
