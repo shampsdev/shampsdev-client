@@ -30,13 +30,13 @@ const projects: Project[] = [
     tags: ['Django (Python)', 'React Native', 'Nginx', 'Docker'],
     image: '/projects/sightquest.png',
   },
-  {
-    title: 'KolomnaGo',
-    description:
-      'Все интересные места Коломны на одной платформе. KolomnaGo помогает туристам и местным жителям быть в курсе всех культурных событий, а организаторам — легко управлять мероприятиями.',
-    tags: ['Django (Python)', 'Vue', 'Traefik', 'Docker'],
-    image: '',
-  },
+  // {
+  //   title: 'KolomnaGo',
+  //   description:
+  //     'Все интересные места Коломны на одной платформе. KolomnaGo помогает туристам и местным жителям быть в курсе всех культурных событий, а организаторам — легко управлять мероприятиями.',
+  //   tags: ['Django (Python)', 'Vue', 'Traefik', 'Docker'],
+  //   image: '',
+  // },
 ];
 
 export const ProjectsSection = () => {
