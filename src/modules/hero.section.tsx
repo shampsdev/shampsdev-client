@@ -1,7 +1,5 @@
 import { AnimatedLogo } from '@/components/animated-logo';
 import { Icons } from '@/components/icons';
-import { TextLogo } from '@/components/text-logo';
-import Marquee from 'react-fast-marquee';
 
 export const HeroSection = () => {
   return (
@@ -11,7 +9,11 @@ export const HeroSection = () => {
         className='min-h-[80vh] w-full flex justify-center pt-20 items-center flex-col gap-y-8'
       >
         <AnimatedLogo />
-        <TextLogo char='full' className='md:hidden w-[90%] h-fit' />
+        <img
+          className='md:hidden w-[90%] h-fit'
+          src='/logo-icons/shamps.gif'
+          alt=''
+        />
         <p className='text-xl text-center'>
           We are the champions - Мы Шампиньоны
         </p>
@@ -31,10 +33,10 @@ export const HeroSection = () => {
           [ Написать шампиньонам ]
         </a>
       </div>
-      <Marquee className='pt-16' autoFill speed={20}>
+      {/* <Marquee className='pt-16' autoFill speed={20}>
         <img className='h-8 pr-20' src='/logo-icons/vkusvill.png' />
         <img className='h-16 pr-20' src='/logo-icons/fond.png' />
-      </Marquee>
+      </Marquee> */}
     </div>
   );
 };
