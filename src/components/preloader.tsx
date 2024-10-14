@@ -13,23 +13,23 @@ const Preloader: React.FC = () => {
       return [0].includes(index);
     } else if (progress < 18) {
       return [0, 1].includes(index);
-    } else if (progress < 30) {
+    } else if (progress < 24) {
       return [0, 1, 2].includes(index);
-    } else if (progress < 31) {
+    } else if (progress < 26) {
       return [1, 2].includes(index);
-    } else if (progress < 37) {
+    } else if (progress < 31) {
       return [1, 2, 3].includes(index);
-    } else if (progress < 56) {
+    } else if (progress < 37) {
       return [1, 2, 3, 5].includes(index);
-    } else if (progress < 61) {
+    } else if (progress < 56) {
       return [1, 2, 5].includes(index);
-    } else if (progress < 74) {
+    } else if (progress < 61) {
       return [0, 2, 5].includes(index);
-    } else if (progress < 83) {
+    } else if (progress < 74) {
       return [0, 2].includes(index);
-    } else if (progress < 87) {
+    } else if (progress < 83) {
       return [0, 2, 4].includes(index);
-    } else if (progress < 95) {
+    } else if (progress < 87) {
       return [4].includes(index);
     }
     return false;
