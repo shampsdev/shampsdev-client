@@ -1,7 +1,10 @@
+import { getStats } from '@/api/stats.get';
+import { useStats } from '@/api/stats.ws';
 import { Footer } from '@/components/footer';
 import { Icons } from '@/components/icons';
 import { NewsTicker } from '@/components/news-ticker';
 import { News } from '@/types/news.interface';
+import { useEffect, useState } from 'react';
 
 const telegram_stats: News[] = [
   {
@@ -19,25 +22,39 @@ const telegram_stats: News[] = [
   },
 ];
 
-const stats: News[] = [
-  {
-    icon: <Icons.dino />,
-    title: '1203 коммита',
-  },
-  {
-    icon: <Icons.time />,
-    title: '34 ночей без сна',
-  },
-  {
-    icon: <Icons.coffee />,
-    title: '603 выпитых кружек кофе',
-  },
-];
+const iconMapping: Record<string, JSX.Element> = {
+  coffee_cups: <Icons.coffee />,
+  sleepless_nights: <Icons.time />,
+  commits: <Icons.dino />,
+};
 
 export const FooterSection = () => {
+  const { data } = useStats();
+  const [initialStats, setInitialStats] = useState<News[]>([]);
+
+  useEffect(() => {
+    const fetchInitialStats = async () => {
+      const response = await getStats();
+      const statsWithIcons = response?.data.stats.map((stat) => ({
+        icon: iconMapping[stat.stat_id] || <>?</>,
+        title: `${stat.count} ${stat.name}`,
+      }));
+      if (statsWithIcons) setInitialStats(statsWithIcons);
+    };
+
+    fetchInitialStats();
+  }, []);
+
+  const statsWithIcons: News[] = data?.statCreated
+    ? data.statCreated.map((stat) => ({
+        icon: iconMapping[stat.stat_id] || <>?</>,
+        title: `${stat.count} ${stat.name}`,
+      }))
+    : initialStats;
+
   return (
     <div className='pt-24'>
-      <NewsTicker newsTop={stats} newsBottom={telegram_stats} />
+      <NewsTicker newsTop={statsWithIcons} newsBottom={telegram_stats} />
       <Footer />
     </div>
   );

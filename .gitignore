@@ -3,6 +3,7 @@
 # ...
 .next
 next-env.d.ts
+.env
 
 logs
 *.log
