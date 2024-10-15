@@ -6,26 +6,13 @@ import { NewsTicker } from '@/components/news-ticker';
 import { News } from '@/types/news.interface';
 import { useEffect, useState } from 'react';
 
-const telegram_stats: News[] = [
-  {
-    icon: <Icons.dino />,
-    title: '128 подписчиков в телеграм канале',
-  },
-  {
-    icon: <Icons.time />,
-    title: 'Вика присоеденилась в телегам канал',
-  },
-  {
-    icon: <Icons.coffee />,
-    title:
-      'Макар прокоментировал "жесть история кайфовая… такие вы милашики, я не могу."',
-  },
-];
-
 const iconMapping: Record<string, JSX.Element> = {
   coffee_cups: <Icons.coffee />,
   sleepless_nights: <Icons.time />,
-  commits: <Icons.dino />,
+  github_commit_count: <Icons.dino />,
+  telegram_channel_count: <Icons.coffee />,
+  telegram_channel_commented: <Icons.time />,
+  telegram_channel_joined: <Icons.dino />,
 };
 
 export const FooterSection = () => {
@@ -35,26 +22,64 @@ export const FooterSection = () => {
   useEffect(() => {
     const fetchInitialStats = async () => {
       const response = await getStats();
-      const statsWithIcons = response?.data.stats.map((stat) => ({
-        icon: iconMapping[stat.stat_id] || <>?</>,
-        title: `${stat.count} ${stat.name}`,
-      }));
-      if (statsWithIcons) setInitialStats(statsWithIcons);
+
+      if (!response || !response.data || !response.data.stats) return;
+
+      const stats = response.data.stats;
+
+      const statsWithIcons = Object.keys(iconMapping).reduce<News[]>(
+        (acc, key) => {
+          const matchingStat = stats.find(
+            (stat: { stat_id: string }) => stat.stat_id === key
+          );
+
+          if (matchingStat) {
+            acc.push({
+              icon: iconMapping[key],
+              title: `${matchingStat.count !== 0 ? matchingStat.count : ''} ${
+                matchingStat.name
+              }`,
+            });
+          }
+
+          return acc;
+        },
+        []
+      );
+
+      console.log(statsWithIcons);
+
+      if (statsWithIcons.length > 0) setInitialStats(statsWithIcons);
     };
 
     fetchInitialStats();
   }, []);
 
   const statsWithIcons: News[] = data?.statCreated
-    ? data.statCreated.map((stat) => ({
-        icon: iconMapping[stat.stat_id] || <>?</>,
-        title: `${stat.count} ${stat.name}`,
-      }))
+    ? Object.keys(iconMapping).reduce<News[]>((acc, key) => {
+        const matchingStat = data.statCreated.find(
+          (stat: { stat_id: string }) => stat.stat_id === key
+        );
+
+        if (matchingStat) {
+          acc.push({
+            icon: iconMapping[key],
+            title: `${matchingStat.count !== 0 ? matchingStat.count : ''} ${
+              matchingStat.name
+            }`,
+          });
+        }
+
+        return acc;
+      }, [])
     : initialStats;
 
   return (
     <div className='pt-24'>
-      <NewsTicker newsTop={statsWithIcons} newsBottom={telegram_stats} />
+      <NewsTicker
+        newsTop={statsWithIcons.slice(0, 3)}
+        newsBottom={statsWithIcons.slice(3, 6)}
+      />
       <Footer />
     </div>
   );

@@ -3,9 +3,12 @@ import { WebSocketLink } from '@apollo/client/link/ws';
 import { SubscriptionClient } from 'subscriptions-transport-ws';
 
 const wsLink = new WebSocketLink(
-  new SubscriptionClient(`wss://api.shamps.dev/graphql`, {
-    reconnect: true,
-  })
+  new SubscriptionClient(
+    process.env.BACKEND_URL ?? 'wss://api.shamps.dev/graphql',
+    {
+      reconnect: true,
+    }
+  )
 );
 
 export const client = new ApolloClient({
