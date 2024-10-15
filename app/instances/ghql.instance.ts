@@ -3,7 +3,7 @@ import { WebSocketLink } from '@apollo/client/link/ws';
 import { SubscriptionClient } from 'subscriptions-transport-ws';
 
 const wsLink = new WebSocketLink(
-  new SubscriptionClient(`wss://${process.env.BACKEND_URL}/graphql`, {
+  new SubscriptionClient(`wss://api.shamps.dev/graphql`, {
     reconnect: true,
   })
 );
