@@ -28,10 +28,10 @@ export const AcheivementComponent = ({ acheivement }: AcheivementProps) => {
       </div>
       <div className='ml-auto flex items-center text-muted-foreground gap-5'>
         <div className='items-center flex justify-end md:justify-between gap-5 md:w-[200px]'>
-          <p className='hidden md:flex text-left'>
-            {acheivement.project.name}
-          </p>
-          <Icons.arrow />
+          <p className='hidden md:flex text-left'>{acheivement.project.name}</p>
+          <a href={acheivement.project.href} target='_blank' rel='noopener noreferrer'>
+            <Icons.arrow />
+          </a>
         </div>
       </div>
     </div>

@@ -7,5 +7,5 @@ export interface Acheivement {
   project: {
     name: string;
     href: string;
-  }
+  };
 }

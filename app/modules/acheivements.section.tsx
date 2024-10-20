@@ -9,7 +9,7 @@ const acheivements: Acheivement[] = [
     category: 'Хакатон Помоги Даркстору',
     project: {
       name: 'Инвентаризация 2.0',
-      href: '',
+      href: 'https://vvteam.tilda.ws/hack',
     },
   },
   {
@@ -20,7 +20,7 @@ const acheivements: Acheivement[] = [
     subcategory: 'Грант',
     project: {
       name: 'SightQuest',
-      href: '',
+      href: 'https://sightquest.ru/',
     },
   },
   {
@@ -30,7 +30,7 @@ const acheivements: Acheivement[] = [
     category: 'NoLabel Development Week',
     project: {
       name: 'DishDash',
-      href: '',
+      href: 'https://dishdash.ru/',
     },
   },
   {
@@ -41,7 +41,7 @@ const acheivements: Acheivement[] = [
     subcategory: 'Лучшая разработка продукта',
     project: {
       name: 'DishDash',
-      href: '',
+      href: 'https://dishdash.ru/',
     },
   },
   {
@@ -51,7 +51,7 @@ const acheivements: Acheivement[] = [
     category: 'SmartSocial',
     project: {
       name: 'KolomnaGo',
-      href: '',
+      href: 'https://smartsocialconf.ru/hackathon',
     },
   },
   {
@@ -61,7 +61,7 @@ const acheivements: Acheivement[] = [
     category: 'Creative Space',
     project: {
       name: 'DishDash',
-      href: '',
+      href: 'https://dishdash.ru/',
     },
   },
   {
@@ -72,7 +72,7 @@ const acheivements: Acheivement[] = [
     subcategory: 'Самая прокаченная реализация',
     project: {
       name: 'SightQuest',
-      href: '',
+      href: 'https://sightquest.ru/',
     },
   },
 ];
