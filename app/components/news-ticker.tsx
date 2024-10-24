@@ -19,7 +19,7 @@ export const NewsTicker = ({ newsTop, newsBottom }: NewsTickerProps) => {
             key={`${index}_${x.title}}`}
             className='pr-10 flex items-center gap-5'
           >
-            {x.icon} <span className='text-xl'>{x.title}</span>
+            {x.icon} <span className='text-lg md:text-xl'>{x.title}</span>
           </div>
         ))}
       </Marquee>
@@ -29,7 +29,7 @@ export const NewsTicker = ({ newsTop, newsBottom }: NewsTickerProps) => {
             key={`${index}_${x.title}}`}
             className='pr-10 flex items-center gap-5'
           >
-            {x.icon} <span className='text-xl'>{x.title}</span>
+            {x.icon} <span className='text-lg md:text-xl'>{x.title}</span>
           </div>
         ))}
       </Marquee>

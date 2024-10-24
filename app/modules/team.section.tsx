@@ -70,7 +70,7 @@ const supporters: People[] = [
 
 export const TeamSection = () => {
   return (
-    <div id='team' className='min-h-screen pt-24'>
+    <div id='team' className='w-[90%] mx-auto min-h-screen pt-24'>
       <p className='text-center text-xl pb-12'>Команда</p>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 w-[90%] mx-auto gap-5'>
         {team.map((person, index) => (

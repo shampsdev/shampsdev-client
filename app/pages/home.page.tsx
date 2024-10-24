@@ -9,7 +9,7 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <div className='space-y-20 md:space-y-10'>
+      <div className='space-y-10'>
         <HeroSection />
         <ProjectsSection />
         <AcheivementsSection />
