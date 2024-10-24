@@ -399,7 +399,7 @@ export const Icons = {
       src='/logo-icons/2.png'
       alt='logo'
       className={twMerge(
-        "h-[2rem] w-[2rem] inline-block object-contain",
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block object-contain",
         props.className
       )}
     />
@@ -409,7 +409,7 @@ export const Icons = {
       src='/icons/coffee.png'
       alt='logo'
       className={twMerge(
-        "h-[2rem] w-[2rem] inline-block object-contain",
+        "h-[1.5rem] w-[1.5rem] md:h-[2rem] md:w-[2rem] inline-block object-contain",
         props.className
       )}
     />
