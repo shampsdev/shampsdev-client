@@ -4,6 +4,12 @@ import { People } from '@/types/people.interface';
 
 const team: People[] = [
   {
+    name: 'Дьяконов Александр',
+    role: 'CEO и devops',
+    contact: 'https://t.me/keine_salz',
+    image: '/people/sasha.png',
+  },
+  {
     name: 'Настя Богданова',
     role: 'бизнес-аналитик',
     contact: 'https://t.me/learn_how_to_use_a_cart',
@@ -16,10 +22,16 @@ const team: People[] = [
     image: '/people/mike.jpeg',
   },
   {
-    name: 'Саша Дьяконов',
-    role: 'backend-разработчик',
-    contact: 'https://t.me/keine_salz',
-    image: '/people/sasha.png',
+    name: 'Тимур Валеев',
+    role: 'frontend-разработчик',
+    contact: 'https://t.me/PriestFaria',
+    image: '/people/timur.jpg',
+  },
+  {
+    name: 'Настя Карандашева',
+    role: 'дизайнер',
+    contact: 'https://t.me/antero13',
+    image: '/people/nastya_k.jpg',
   },
   {
     name: 'Вика Кулешова',
