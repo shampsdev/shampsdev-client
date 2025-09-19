@@ -19,15 +19,18 @@ export const Footer = () => {
           </div>
           <div className='flex text-xl md:gap-10 h-fit flex-col md:flex-row'>
             <div>
-              <a href='#hero'>
+              <a href='/'>
                 <p>Главная</p>
               </a>
-              <a href='#acheivements'>
+              <a href='/#acheivements'>
                 <p>Награды</p>
+              </a>
+              <a href='/store'>
+                <p>ФУТБОЛКА</p>
               </a>
             </div>
             <div>
-              <a href='#team'>
+              <a href='/#team'>
                 <p>Команда</p>
               </a>
             </div>
