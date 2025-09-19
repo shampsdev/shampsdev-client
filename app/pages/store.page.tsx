@@ -204,7 +204,7 @@ export const StorePage = () => {
               
               <div>
                 <div className="flex items-center justify-between mb-6">
-                  <p className="text-2xl font-bold">2000 ₽</p>
+                  <p className="text-2xl font-bold">1950 ₽</p>
                 </div>
                 
                 <div className="border-t border-gray-200 pt-4">
