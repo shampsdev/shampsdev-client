@@ -13,7 +13,8 @@ export const StorePage = () => {
   const images = [
     '/store/t-shorts/shamps-1_1.jpg',
     '/store/t-shorts/shamps-1_2.jpg',
-    '/store/t-shorts/shamps-1_3.png',
+    '/store/t-shorts/shamps-1_3.jpg',
+    '/store/t-shorts/shamps-1_4.png',
   ];
 
   const nextImage = useCallback(() => {
